@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart ERP Agent 测试页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 3px;
+            white-space: pre-wrap;
+        }
+        .success {
+            border-left: 4px solid #28a745;
+        }
+        .error {
+            border-left: 4px solid #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Smart ERP Agent 功能测试</h1>
+        
+        <div class="test-section">
+            <h3>📊 销售报告测试</h3>
+            <button class="test-button" onclick="testSalesReport()">测试每日销售报告</button>
+            <div id="sales-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>📦 库存检查测试</h3>
+            <button class="test-button" onclick="testInventory()">测试库存检查</button>
+            <div id="inventory-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>🔍 销售查询测试</h3>
+            <button class="test-button" onclick="testSalesQuery()">测试销售查询</button>
+            <div id="query-result" class="result"></div>
+        </div>
+        
+        <div class="test-section">
+            <h3>💡 快捷链接</h3>
+            <a href="http://localhost:8001/docs" target="_blank" class="test-button" style="text-decoration: none; display: inline-block;">打开API文档</a>
+            <a href="http://localhost:8001/ping" target="_blank" class="test-button" style="text-decoration: none; display: inline-block;">健康检查</a>
+            <a href="http://localhost:8001/api/v1/info" target="_blank" class="test-button" style="text-decoration: none; display: inline-block;">系统信息</a>
+        </div>
+    </div>
+
+    <script>
+        async function testSalesReport() {
+            const resultDiv = document.getElementById('sales-result');
+            resultDiv.textContent = '⏳ 测试中...';
+            
+            try {
+                const response = await fetch('http://localhost:8001/api/v1/reports/sales_daily');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `✅ 成功!\n` +
+                        `日期: ${data.report_date}\n` +
+                        `总销售额: ¥${data.data?.total_sales?.toFixed(2) || 0}\n` +
+                        `总销量: ${data.data?.total_quantity || 0} 件\n` +
+                        `产品种类: ${data.data?.unique_products || 0} 种\n` +
+                        `摘要: ${data.summary?.substring(0, 200) || 'N/A'}...`;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 错误: ${data.detail || response.statusText}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+            }
+        }
+        
+        async function testInventory() {
+            const resultDiv = document.getElementById('inventory-result');
+            resultDiv.textContent = '⏳ 测试中...';
+            
+            try {
+                const response = await fetch('http://localhost:8001/api/v1/inventory_check', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: "库存低于50的产品",
+                        threshold: 50
+                    })
+                });
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    const lowStockCount = data.data?.total_count || 0;
+                    resultDiv.textContent = `✅ 成功!\n` +
+                        `查询: ${data.query}\n` +
+                        `低库存产品数: ${lowStockCount}\n` +
+                        `回答: ${data.answer?.substring(0, 200) || 'N/A'}...`;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 错误: ${data.detail || response.statusText}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+            }
+        }
+        
+        async function testSalesQuery() {
+            const resultDiv = document.getElementById('query-result');
+            resultDiv.textContent = '⏳ 测试中...';
+            
+            try {
+                const response = await fetch('http://localhost:8001/api/v1/sales_query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: "今日销售情况如何？"
+                    })
+                });
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `✅ 成功!\n` +
+                        `查询: ${data.query}\n` +
+                        `查询类型: ${data.query_type}\n` +
+                        `回答: ${data.answer?.substring(0, 200) || 'N/A'}...`;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 错误: ${data.detail || response.statusText}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html> 

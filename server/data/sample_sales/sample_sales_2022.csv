@@ -1,0 +1,501 @@
+SaleID,ProductID,ProductName,Category,QuantitySold,PricePerUnit,TotalAmount,SaleDate
+1,6,Office Chair Ergonomic,Furniture,9,175.67,1581.03,2022-12-16
+2,5,USB-C Hub,Accessories,4,69.62,278.48,2022-11-22
+3,2,Wireless Mouse,Electronics,8,38.8,310.4,2022-04-20
+4,12,Smartphone X,Electronics,10,850.21,8502.1,2022-05-04
+5,9,Cloud Computing Textbook,Books,8,79.82,638.56,2022-01-18
+6,3,Mechanical Keyboard,Electronics,9,88.43,795.87,2022-06-03
+7,11,Webcam HD 1080p,Electronics,4,58.1,232.4,2022-01-23
+8,8,Python Programming Book,Books,7,38.65,270.55,2022-09-16
+9,4,"4K UHD Monitor 27""",Electronics,7,420.37,2942.59,2022-09-13
+10,13,Tablet S,Electronics,1,620.19,620.19,2022-08-04
+11,14,Printer All-in-One,Office Supplies,5,152.68,763.4,2022-07-03
+12,8,Python Programming Book,Books,5,54.0,270.0,2022-06-22
+13,5,USB-C Hub,Accessories,3,64.8,194.4,2022-01-25
+14,7,Standing Desk (Electric),Furniture,10,576.68,5766.8,2022-04-05
+15,10,Noise Cancelling Headphones,Electronics,3,178.27,534.81,2022-09-16
+16,8,Python Programming Book,Books,1,40.1,40.1,2022-07-15
+17,7,Standing Desk (Electric),Furniture,1,455.82,455.82,2022-07-26
+18,4,"4K UHD Monitor 27""",Electronics,3,390.0,1170.0,2022-09-29
+19,6,Office Chair Ergonomic,Furniture,7,206.44,1445.08,2022-07-29
+20,13,Tablet S,Electronics,7,499.64,3497.48,2022-02-08
+21,4,"4K UHD Monitor 27""",Electronics,3,457.56,1372.68,2022-07-23
+22,5,USB-C Hub,Accessories,9,67.9,611.1,2022-04-24
+23,2,Wireless Mouse,Electronics,6,21.39,128.34,2022-06-18
+24,11,Webcam HD 1080p,Electronics,7,63.68,445.76,2022-05-28
+25,7,Standing Desk (Electric),Furniture,1,493.63,493.63,2022-12-24
+26,4,"4K UHD Monitor 27""",Electronics,7,490.86,3436.02,2022-09-17
+27,4,"4K UHD Monitor 27""",Electronics,5,366.09,1830.45,2022-07-13
+28,15,A4 Printing Paper (Ream),Office Supplies,2,12.2,24.4,2022-01-06
+29,2,Wireless Mouse,Electronics,1,38.33,38.33,2022-02-10
+30,6,Office Chair Ergonomic,Furniture,8,192.7,1541.6,2022-08-30
+31,11,Webcam HD 1080p,Electronics,6,95.61,573.66,2022-07-09
+32,15,A4 Printing Paper (Ream),Office Supplies,10,8.52,85.2,2022-04-02
+33,10,Noise Cancelling Headphones,Electronics,8,313.13,2505.04,2022-09-23
+34,12,Smartphone X,Electronics,4,1044.91,4179.64,2022-04-29
+35,3,Mechanical Keyboard,Electronics,7,144.68,1012.76,2022-07-26
+36,7,Standing Desk (Electric),Furniture,9,575.95,5183.55,2022-05-17
+37,13,Tablet S,Electronics,8,601.43,4811.44,2022-07-01
+38,5,USB-C Hub,Accessories,3,55.12,165.36,2022-12-10
+39,11,Webcam HD 1080p,Electronics,4,45.85,183.4,2022-11-09
+40,4,"4K UHD Monitor 27""",Electronics,6,286.42,1718.52,2022-08-16
+41,7,Standing Desk (Electric),Furniture,7,508.62,3560.34,2022-03-20
+42,3,Mechanical Keyboard,Electronics,5,100.89,504.45,2022-10-18
+43,10,Noise Cancelling Headphones,Electronics,5,150.79,753.95,2022-10-22
+44,15,A4 Printing Paper (Ream),Office Supplies,10,12.95,129.5,2022-07-30
+45,4,"4K UHD Monitor 27""",Electronics,9,316.79,2851.11,2022-03-01
+46,10,Noise Cancelling Headphones,Electronics,1,202.51,202.51,2022-08-22
+47,15,A4 Printing Paper (Ream),Office Supplies,10,8.76,87.6,2022-11-20
+48,6,Office Chair Ergonomic,Furniture,8,354.48,2835.84,2022-06-17
+49,2,Wireless Mouse,Electronics,1,39.7,39.7,2022-08-17
+50,8,Python Programming Book,Books,10,67.3,673.0,2022-10-28
+51,11,Webcam HD 1080p,Electronics,5,73.61,368.05,2022-04-01
+52,10,Noise Cancelling Headphones,Electronics,5,212.07,1060.35,2022-01-14
+53,15,A4 Printing Paper (Ream),Office Supplies,3,7.88,23.64,2022-04-13
+54,2,Wireless Mouse,Electronics,8,38.7,309.6,2022-04-30
+55,1,"Laptop Pro 13""",Electronics,8,1487.54,11900.32,2022-06-02
+56,2,Wireless Mouse,Electronics,3,48.1,144.3,2022-03-04
+57,10,Noise Cancelling Headphones,Electronics,1,246.25,246.25,2022-12-02
+58,11,Webcam HD 1080p,Electronics,9,102.06,918.54,2022-12-02
+59,2,Wireless Mouse,Electronics,10,46.75,467.5,2022-05-31
+60,6,Office Chair Ergonomic,Furniture,7,187.7,1313.9,2022-12-02
+61,13,Tablet S,Electronics,8,391.25,3130.0,2022-11-06
+62,10,Noise Cancelling Headphones,Electronics,2,267.46,534.92,2022-04-19
+63,11,Webcam HD 1080p,Electronics,3,115.1,345.3,2022-03-27
+64,7,Standing Desk (Electric),Furniture,5,328.8,1644.0,2022-08-23
+65,5,USB-C Hub,Accessories,10,45.09,450.9,2022-01-31
+66,11,Webcam HD 1080p,Electronics,10,110.84,1108.4,2022-09-03
+67,13,Tablet S,Electronics,8,741.53,5932.24,2022-02-25
+68,11,Webcam HD 1080p,Electronics,1,46.77,46.77,2022-10-11
+69,10,Noise Cancelling Headphones,Electronics,7,265.19,1856.33,2022-02-05
+70,2,Wireless Mouse,Electronics,7,35.61,249.27,2022-03-31
+71,12,Smartphone X,Electronics,1,1193.95,1193.95,2022-07-01
+72,7,Standing Desk (Electric),Furniture,7,375.34,2627.38,2022-06-14
+73,8,Python Programming Book,Books,1,30.88,30.88,2022-02-20
+74,7,Standing Desk (Electric),Furniture,3,435.19,1305.57,2022-06-06
+75,13,Tablet S,Electronics,5,361.59,1807.95,2022-06-11
+76,4,"4K UHD Monitor 27""",Electronics,10,280.3,2803.0,2022-11-07
+77,14,Printer All-in-One,Office Supplies,7,107.46,752.22,2022-12-28
+78,2,Wireless Mouse,Electronics,10,27.47,274.7,2022-07-02
+79,7,Standing Desk (Electric),Furniture,6,667.84,4007.04,2022-12-09
+80,14,Printer All-in-One,Office Supplies,4,87.25,349.0,2022-01-24
+81,14,Printer All-in-One,Office Supplies,9,215.13,1936.17,2022-07-27
+82,13,Tablet S,Electronics,6,656.92,3941.52,2022-05-17
+83,12,Smartphone X,Electronics,3,1084.65,3253.95,2022-02-07
+84,3,Mechanical Keyboard,Electronics,1,189.31,189.31,2022-05-30
+85,5,USB-C Hub,Accessories,2,53.5,107.0,2022-04-15
+86,6,Office Chair Ergonomic,Furniture,6,224.05,1344.3,2022-11-22
+87,5,USB-C Hub,Accessories,10,56.88,568.8,2022-09-08
+88,5,USB-C Hub,Accessories,9,45.68,411.12,2022-12-10
+89,7,Standing Desk (Electric),Furniture,1,550.26,550.26,2022-09-08
+90,10,Noise Cancelling Headphones,Electronics,4,206.98,827.92,2022-07-18
+91,4,"4K UHD Monitor 27""",Electronics,7,467.39,3271.73,2022-04-26
+92,11,Webcam HD 1080p,Electronics,6,92.06,552.36,2022-06-01
+93,6,Office Chair Ergonomic,Furniture,5,226.06,1130.3,2022-03-19
+94,5,USB-C Hub,Accessories,3,35.6,106.8,2022-10-25
+95,12,Smartphone X,Electronics,10,1001.87,10018.7,2022-03-13
+96,2,Wireless Mouse,Electronics,3,49.04,147.12,2022-11-11
+97,12,Smartphone X,Electronics,8,1194.91,9559.28,2022-10-03
+98,9,Cloud Computing Textbook,Books,5,88.48,442.4,2022-10-14
+99,5,USB-C Hub,Accessories,2,77.98,155.96,2022-11-01
+100,12,Smartphone X,Electronics,8,652.02,5216.16,2022-05-12
+101,13,Tablet S,Electronics,2,549.23,1098.46,2022-11-12
+102,14,Printer All-in-One,Office Supplies,10,125.72,1257.2,2022-07-11
+103,13,Tablet S,Electronics,7,457.09,3199.63,2022-03-09
+104,11,Webcam HD 1080p,Electronics,7,98.36,688.52,2022-05-01
+105,7,Standing Desk (Electric),Furniture,1,377.67,377.67,2022-07-23
+106,7,Standing Desk (Electric),Furniture,6,642.7,3856.2,2022-05-22
+107,4,"4K UHD Monitor 27""",Electronics,10,420.03,4200.3,2022-02-16
+108,10,Noise Cancelling Headphones,Electronics,9,307.61,2768.49,2022-01-21
+109,15,A4 Printing Paper (Ream),Office Supplies,4,9.97,39.88,2022-02-15
+110,14,Printer All-in-One,Office Supplies,2,212.06,424.12,2022-04-15
+111,9,Cloud Computing Textbook,Books,7,74.14,518.98,2022-04-15
+112,15,A4 Printing Paper (Ream),Office Supplies,1,12.8,12.8,2022-08-15
+113,11,Webcam HD 1080p,Electronics,4,104.27,417.08,2022-07-05
+114,1,"Laptop Pro 13""",Electronics,5,971.36,4856.8,2022-04-10
+115,6,Office Chair Ergonomic,Furniture,5,268.17,1340.85,2022-06-14
+116,13,Tablet S,Electronics,7,683.31,4783.17,2022-07-05
+117,10,Noise Cancelling Headphones,Electronics,7,256.14,1792.98,2022-12-24
+118,3,Mechanical Keyboard,Electronics,6,199.79,1198.74,2022-08-01
+119,2,Wireless Mouse,Electronics,10,21.94,219.4,2022-03-24
+120,9,Cloud Computing Textbook,Books,5,64.99,324.95,2022-06-27
+121,14,Printer All-in-One,Office Supplies,4,236.28,945.12,2022-12-07
+122,10,Noise Cancelling Headphones,Electronics,6,227.89,1367.34,2022-08-22
+123,6,Office Chair Ergonomic,Furniture,7,349.73,2448.11,2022-09-08
+124,11,Webcam HD 1080p,Electronics,6,43.55,261.3,2022-02-13
+125,1,"Laptop Pro 13""",Electronics,6,1398.66,8391.96,2022-09-04
+126,9,Cloud Computing Textbook,Books,8,53.79,430.32,2022-03-07
+127,13,Tablet S,Electronics,10,791.72,7917.2,2022-12-09
+128,15,A4 Printing Paper (Ream),Office Supplies,5,14.08,70.4,2022-02-13
+129,8,Python Programming Book,Books,2,35.27,70.54,2022-06-19
+130,6,Office Chair Ergonomic,Furniture,10,203.99,2039.9,2022-08-10
+131,12,Smartphone X,Electronics,10,1007.12,10071.2,2022-11-29
+132,14,Printer All-in-One,Office Supplies,10,239.83,2398.3,2022-09-24
+133,11,Webcam HD 1080p,Electronics,9,95.24,857.16,2022-02-18
+134,8,Python Programming Book,Books,3,68.67,206.01,2022-11-07
+135,13,Tablet S,Electronics,4,763.87,3055.48,2022-07-11
+136,15,A4 Printing Paper (Ream),Office Supplies,10,6.38,63.8,2022-05-30
+137,1,"Laptop Pro 13""",Electronics,3,1490.6,4471.8,2022-06-06
+138,6,Office Chair Ergonomic,Furniture,3,243.76,731.28,2022-03-17
+139,11,Webcam HD 1080p,Electronics,9,57.12,514.08,2022-12-05
+140,15,A4 Printing Paper (Ream),Office Supplies,7,6.5,45.5,2022-03-16
+141,4,"4K UHD Monitor 27""",Electronics,8,302.85,2422.8,2022-06-04
+142,10,Noise Cancelling Headphones,Electronics,1,318.19,318.19,2022-02-21
+143,1,"Laptop Pro 13""",Electronics,6,1206.23,7237.38,2022-11-22
+144,5,USB-C Hub,Accessories,8,58.28,466.24,2022-04-10
+145,3,Mechanical Keyboard,Electronics,4,171.77,687.08,2022-11-06
+146,2,Wireless Mouse,Electronics,5,20.82,104.1,2022-01-04
+147,2,Wireless Mouse,Electronics,5,28.06,140.3,2022-11-05
+148,7,Standing Desk (Electric),Furniture,3,639.34,1918.02,2022-03-23
+149,5,USB-C Hub,Accessories,2,43.53,87.06,2022-03-20
+150,15,A4 Printing Paper (Ream),Office Supplies,2,9.35,18.7,2022-05-19
+151,15,A4 Printing Paper (Ream),Office Supplies,2,7.42,14.84,2022-04-23
+152,5,USB-C Hub,Accessories,8,41.17,329.36,2022-10-04
+153,15,A4 Printing Paper (Ream),Office Supplies,10,13.9,139.0,2022-01-21
+154,10,Noise Cancelling Headphones,Electronics,4,121.73,486.92,2022-07-30
+155,5,USB-C Hub,Accessories,5,55.89,279.45,2022-12-10
+156,7,Standing Desk (Electric),Furniture,8,460.45,3683.6,2022-10-26
+157,11,Webcam HD 1080p,Electronics,6,95.09,570.54,2022-10-26
+158,15,A4 Printing Paper (Ream),Office Supplies,8,10.25,82.0,2022-09-11
+159,1,"Laptop Pro 13""",Electronics,5,985.64,4928.2,2022-07-08
+160,8,Python Programming Book,Books,5,59.19,295.95,2022-11-02
+161,3,Mechanical Keyboard,Electronics,10,153.04,1530.4,2022-07-20
+162,3,Mechanical Keyboard,Electronics,1,79.5,79.5,2022-04-22
+163,13,Tablet S,Electronics,9,764.23,6878.07,2022-10-06
+164,2,Wireless Mouse,Electronics,1,29.65,29.65,2022-07-03
+165,10,Noise Cancelling Headphones,Electronics,9,136.25,1226.25,2022-12-29
+166,7,Standing Desk (Electric),Furniture,10,598.71,5987.1,2022-07-13
+167,8,Python Programming Book,Books,1,60.4,60.4,2022-12-29
+168,13,Tablet S,Electronics,10,365.58,3655.8,2022-01-25
+169,5,USB-C Hub,Accessories,2,35.78,71.56,2022-06-17
+170,2,Wireless Mouse,Electronics,7,41.9,293.3,2022-06-27
+171,3,Mechanical Keyboard,Electronics,7,178.81,1251.67,2022-10-24
+172,13,Tablet S,Electronics,3,413.96,1241.88,2022-07-08
+173,13,Tablet S,Electronics,3,411.94,1235.82,2022-05-18
+174,2,Wireless Mouse,Electronics,10,23.68,236.8,2022-01-04
+175,14,Printer All-in-One,Office Supplies,6,89.53,537.18,2022-07-21
+176,4,"4K UHD Monitor 27""",Electronics,10,319.61,3196.1,2022-09-27
+177,7,Standing Desk (Electric),Furniture,1,524.14,524.14,2022-11-21
+178,3,Mechanical Keyboard,Electronics,1,188.39,188.39,2022-09-29
+179,11,Webcam HD 1080p,Electronics,6,83.35,500.1,2022-07-28
+180,11,Webcam HD 1080p,Electronics,4,101.4,405.6,2022-09-04
+181,3,Mechanical Keyboard,Electronics,2,80.85,161.7,2022-03-12
+182,8,Python Programming Book,Books,2,41.69,83.38,2022-01-10
+183,2,Wireless Mouse,Electronics,1,45.02,45.02,2022-01-14
+184,11,Webcam HD 1080p,Electronics,1,115.21,115.21,2022-03-01
+185,6,Office Chair Ergonomic,Furniture,1,259.95,259.95,2022-12-16
+186,3,Mechanical Keyboard,Electronics,3,78.38,235.14,2022-06-02
+187,6,Office Chair Ergonomic,Furniture,2,309.08,618.16,2022-04-18
+188,5,USB-C Hub,Accessories,6,52.52,315.12,2022-12-16
+189,10,Noise Cancelling Headphones,Electronics,10,287.26,2872.6,2022-10-21
+190,10,Noise Cancelling Headphones,Electronics,2,349.65,699.3,2022-10-31
+191,13,Tablet S,Electronics,7,562.3,3936.1,2022-11-19
+192,2,Wireless Mouse,Electronics,5,22.96,114.8,2022-05-04
+193,12,Smartphone X,Electronics,8,637.84,5102.72,2022-10-17
+194,1,"Laptop Pro 13""",Electronics,6,1155.58,6933.48,2022-08-12
+195,10,Noise Cancelling Headphones,Electronics,6,188.69,1132.14,2022-06-23
+196,6,Office Chair Ergonomic,Furniture,6,282.85,1697.1,2022-11-20
+197,4,"4K UHD Monitor 27""",Electronics,6,385.61,2313.66,2022-03-17
+198,13,Tablet S,Electronics,2,747.84,1495.68,2022-04-16
+199,8,Python Programming Book,Books,3,27.96,83.88,2022-03-11
+200,7,Standing Desk (Electric),Furniture,9,575.36,5178.24,2022-01-26
+201,5,USB-C Hub,Accessories,2,31.81,63.62,2022-04-01
+202,13,Tablet S,Electronics,5,650.68,3253.4,2022-04-18
+203,1,"Laptop Pro 13""",Electronics,1,1358.02,1358.02,2022-10-03
+204,4,"4K UHD Monitor 27""",Electronics,10,353.96,3539.6,2022-06-13
+205,11,Webcam HD 1080p,Electronics,2,79.94,159.88,2022-10-08
+206,6,Office Chair Ergonomic,Furniture,8,245.43,1963.44,2022-11-21
+207,12,Smartphone X,Electronics,2,1089.56,2179.12,2022-10-08
+208,11,Webcam HD 1080p,Electronics,5,103.32,516.6,2022-05-15
+209,10,Noise Cancelling Headphones,Electronics,3,121.61,364.83,2022-09-04
+210,2,Wireless Mouse,Electronics,1,46.37,46.37,2022-03-29
+211,2,Wireless Mouse,Electronics,3,48.9,146.7,2022-04-20
+212,8,Python Programming Book,Books,9,51.77,465.93,2022-11-17
+213,7,Standing Desk (Electric),Furniture,7,485.52,3398.64,2022-07-28
+214,15,A4 Printing Paper (Ream),Office Supplies,4,9.1,36.4,2022-05-10
+215,5,USB-C Hub,Accessories,7,72.37,506.59,2022-10-13
+216,15,A4 Printing Paper (Ream),Office Supplies,8,9.06,72.48,2022-02-22
+217,10,Noise Cancelling Headphones,Electronics,1,224.75,224.75,2022-03-07
+218,13,Tablet S,Electronics,9,337.57,3038.13,2022-10-03
+219,1,"Laptop Pro 13""",Electronics,1,1111.62,1111.62,2022-10-18
+220,13,Tablet S,Electronics,1,786.18,786.18,2022-09-19
+221,6,Office Chair Ergonomic,Furniture,10,306.13,3061.3,2022-08-06
+222,3,Mechanical Keyboard,Electronics,7,74.82,523.74,2022-07-29
+223,5,USB-C Hub,Accessories,3,46.26,138.78,2022-06-26
+224,9,Cloud Computing Textbook,Books,8,80.95,647.6,2022-01-18
+225,13,Tablet S,Electronics,8,676.47,5411.76,2022-05-22
+226,15,A4 Printing Paper (Ream),Office Supplies,6,8.51,51.06,2022-04-10
+227,6,Office Chair Ergonomic,Furniture,2,204.29,408.58,2022-04-13
+228,10,Noise Cancelling Headphones,Electronics,3,331.65,994.95,2022-04-29
+229,7,Standing Desk (Electric),Furniture,5,560.89,2804.45,2022-01-27
+230,5,USB-C Hub,Accessories,8,49.54,396.32,2022-08-29
+231,12,Smartphone X,Electronics,8,1022.54,8180.32,2022-01-13
+232,2,Wireless Mouse,Electronics,2,42.4,84.8,2022-10-02
+233,7,Standing Desk (Electric),Furniture,9,373.38,3360.42,2022-01-22
+234,1,"Laptop Pro 13""",Electronics,7,1235.18,8646.26,2022-11-07
+235,4,"4K UHD Monitor 27""",Electronics,8,410.03,3280.24,2022-12-16
+236,13,Tablet S,Electronics,3,401.64,1204.92,2022-10-30
+237,3,Mechanical Keyboard,Electronics,10,182.13,1821.3,2022-02-27
+238,6,Office Chair Ergonomic,Furniture,7,156.39,1094.73,2022-02-03
+239,11,Webcam HD 1080p,Electronics,7,106.06,742.42,2022-03-21
+240,4,"4K UHD Monitor 27""",Electronics,6,287.15,1722.9,2022-10-31
+241,15,A4 Printing Paper (Ream),Office Supplies,8,8.98,71.84,2022-02-15
+242,4,"4K UHD Monitor 27""",Electronics,9,300.01,2700.09,2022-11-27
+243,7,Standing Desk (Electric),Furniture,10,399.02,3990.2,2022-05-16
+244,5,USB-C Hub,Accessories,8,67.37,538.96,2022-09-17
+245,4,"4K UHD Monitor 27""",Electronics,2,464.46,928.92,2022-11-30
+246,6,Office Chair Ergonomic,Furniture,5,216.52,1082.6,2022-07-04
+247,14,Printer All-in-One,Office Supplies,7,149.66,1047.62,2022-12-28
+248,10,Noise Cancelling Headphones,Electronics,3,152.94,458.82,2022-11-02
+249,4,"4K UHD Monitor 27""",Electronics,2,408.52,817.04,2022-07-03
+250,14,Printer All-in-One,Office Supplies,6,207.4,1244.4,2022-04-13
+251,4,"4K UHD Monitor 27""",Electronics,1,326.82,326.82,2022-03-15
+252,13,Tablet S,Electronics,5,745.81,3729.05,2022-04-01
+253,15,A4 Printing Paper (Ream),Office Supplies,1,6.48,6.48,2022-06-30
+254,8,Python Programming Book,Books,5,40.07,200.35,2022-11-15
+255,7,Standing Desk (Electric),Furniture,1,309.13,309.13,2022-07-21
+256,15,A4 Printing Paper (Ream),Office Supplies,6,8.38,50.28,2022-05-21
+257,13,Tablet S,Electronics,4,688.48,2753.92,2022-02-23
+258,1,"Laptop Pro 13""",Electronics,10,1494.91,14949.1,2022-12-29
+259,7,Standing Desk (Electric),Furniture,5,667.21,3336.05,2022-10-24
+260,12,Smartphone X,Electronics,5,970.26,4851.3,2022-01-25
+261,2,Wireless Mouse,Electronics,2,44.61,89.22,2022-07-16
+262,8,Python Programming Book,Books,10,29.66,296.6,2022-10-02
+263,6,Office Chair Ergonomic,Furniture,3,285.36,856.08,2022-05-04
+264,7,Standing Desk (Electric),Furniture,6,316.18,1897.08,2022-12-21
+265,3,Mechanical Keyboard,Electronics,2,182.8,365.6,2022-03-10
+266,6,Office Chair Ergonomic,Furniture,4,214.25,857.0,2022-12-20
+267,7,Standing Desk (Electric),Furniture,10,374.55,3745.5,2022-12-16
+268,10,Noise Cancelling Headphones,Electronics,2,282.72,565.44,2022-09-13
+269,8,Python Programming Book,Books,9,30.37,273.33,2022-10-14
+270,14,Printer All-in-One,Office Supplies,8,181.3,1450.4,2022-11-26
+271,15,A4 Printing Paper (Ream),Office Supplies,4,14.1,56.4,2022-10-31
+272,4,"4K UHD Monitor 27""",Electronics,7,439.86,3079.02,2022-10-16
+273,12,Smartphone X,Electronics,10,1049.81,10498.1,2022-08-15
+274,5,USB-C Hub,Accessories,8,50.23,401.84,2022-04-13
+275,8,Python Programming Book,Books,3,32.72,98.16,2022-10-29
+276,1,"Laptop Pro 13""",Electronics,4,1208.01,4832.04,2022-03-24
+277,1,"Laptop Pro 13""",Electronics,7,1489.99,10429.93,2022-12-11
+278,10,Noise Cancelling Headphones,Electronics,2,337.6,675.2,2022-04-11
+279,13,Tablet S,Electronics,3,641.62,1924.86,2022-02-06
+280,5,USB-C Hub,Accessories,9,35.84,322.56,2022-04-19
+281,14,Printer All-in-One,Office Supplies,3,114.05,342.15,2022-06-13
+282,4,"4K UHD Monitor 27""",Electronics,5,311.05,1555.25,2022-07-17
+283,15,A4 Printing Paper (Ream),Office Supplies,4,10.58,42.32,2022-04-19
+284,13,Tablet S,Electronics,1,306.95,306.95,2022-08-02
+285,1,"Laptop Pro 13""",Electronics,1,1027.08,1027.08,2022-09-04
+286,8,Python Programming Book,Books,4,41.31,165.24,2022-04-24
+287,11,Webcam HD 1080p,Electronics,5,87.86,439.3,2022-07-06
+288,8,Python Programming Book,Books,10,53.29,532.9,2022-04-15
+289,1,"Laptop Pro 13""",Electronics,7,1366.12,9562.84,2022-09-01
+290,11,Webcam HD 1080p,Electronics,10,106.32,1063.2,2022-11-12
+291,11,Webcam HD 1080p,Electronics,6,76.97,461.82,2022-09-25
+292,5,USB-C Hub,Accessories,8,36.46,291.68,2022-01-30
+293,8,Python Programming Book,Books,2,39.04,78.08,2022-03-24
+294,5,USB-C Hub,Accessories,5,37.95,189.75,2022-03-29
+295,9,Cloud Computing Textbook,Books,8,50.33,402.64,2022-06-12
+296,13,Tablet S,Electronics,4,734.56,2938.24,2022-02-10
+297,9,Cloud Computing Textbook,Books,8,68.25,546.0,2022-05-27
+298,4,"4K UHD Monitor 27""",Electronics,4,390.23,1560.92,2022-07-16
+299,1,"Laptop Pro 13""",Electronics,8,1419.42,11355.36,2022-03-06
+300,15,A4 Printing Paper (Ream),Office Supplies,4,6.12,24.48,2022-09-24
+301,15,A4 Printing Paper (Ream),Office Supplies,9,10.95,98.55,2022-10-22
+302,6,Office Chair Ergonomic,Furniture,10,222.66,2226.6,2022-01-08
+303,14,Printer All-in-One,Office Supplies,3,235.56,706.68,2022-11-22
+304,2,Wireless Mouse,Electronics,4,44.02,176.08,2022-12-23
+305,12,Smartphone X,Electronics,4,801.36,3205.44,2022-04-04
+306,3,Mechanical Keyboard,Electronics,4,112.39,449.56,2022-11-03
+307,10,Noise Cancelling Headphones,Electronics,3,129.42,388.26,2022-03-27
+308,3,Mechanical Keyboard,Electronics,7,86.27,603.89,2022-06-02
+309,2,Wireless Mouse,Electronics,9,21.14,190.26,2022-11-15
+310,6,Office Chair Ergonomic,Furniture,7,212.75,1489.25,2022-09-04
+311,12,Smartphone X,Electronics,1,735.72,735.72,2022-09-12
+312,5,USB-C Hub,Accessories,3,41.07,123.21,2022-10-18
+313,10,Noise Cancelling Headphones,Electronics,5,230.85,1154.25,2022-06-30
+314,1,"Laptop Pro 13""",Electronics,8,1448.6,11588.8,2022-04-01
+315,5,USB-C Hub,Accessories,6,47.36,284.16,2022-02-01
+316,11,Webcam HD 1080p,Electronics,1,103.46,103.46,2022-08-20
+317,4,"4K UHD Monitor 27""",Electronics,5,300.95,1504.75,2022-04-20
+318,14,Printer All-in-One,Office Supplies,7,135.13,945.91,2022-06-19
+319,3,Mechanical Keyboard,Electronics,6,165.01,990.06,2022-08-06
+320,8,Python Programming Book,Books,2,32.24,64.48,2022-01-15
+321,9,Cloud Computing Textbook,Books,9,70.63,635.67,2022-08-29
+322,6,Office Chair Ergonomic,Furniture,6,261.75,1570.5,2022-09-17
+323,5,USB-C Hub,Accessories,1,33.9,33.9,2022-12-03
+324,1,"Laptop Pro 13""",Electronics,10,925.18,9251.8,2022-12-18
+325,14,Printer All-in-One,Office Supplies,4,198.3,793.2,2022-07-28
+326,7,Standing Desk (Electric),Furniture,5,329.4,1647.0,2022-09-01
+327,5,USB-C Hub,Accessories,3,36.78,110.34,2022-07-15
+328,5,USB-C Hub,Accessories,8,42.79,342.32,2022-08-30
+329,4,"4K UHD Monitor 27""",Electronics,10,451.87,4518.7,2022-09-26
+330,14,Printer All-in-One,Office Supplies,2,130.94,261.88,2022-06-23
+331,8,Python Programming Book,Books,9,59.34,534.06,2022-05-15
+332,7,Standing Desk (Electric),Furniture,5,679.26,3396.3,2022-10-24
+333,14,Printer All-in-One,Office Supplies,8,230.05,1840.4,2022-10-11
+334,1,"Laptop Pro 13""",Electronics,8,1325.0,10600.0,2022-08-15
+335,15,A4 Printing Paper (Ream),Office Supplies,6,12.84,77.04,2022-04-23
+336,8,Python Programming Book,Books,7,49.84,348.88,2022-06-26
+337,10,Noise Cancelling Headphones,Electronics,3,303.87,911.61,2022-01-02
+338,11,Webcam HD 1080p,Electronics,7,60.53,423.71,2022-02-11
+339,7,Standing Desk (Electric),Furniture,8,476.9,3815.2,2022-04-16
+340,6,Office Chair Ergonomic,Furniture,6,379.88,2279.28,2022-03-19
+341,5,USB-C Hub,Accessories,5,32.82,164.1,2022-02-13
+342,14,Printer All-in-One,Office Supplies,8,82.26,658.08,2022-07-19
+343,12,Smartphone X,Electronics,2,721.02,1442.04,2022-10-21
+344,9,Cloud Computing Textbook,Books,5,75.87,379.35,2022-08-25
+345,6,Office Chair Ergonomic,Furniture,10,349.37,3493.7,2022-10-04
+346,5,USB-C Hub,Accessories,1,32.27,32.27,2022-06-13
+347,14,Printer All-in-One,Office Supplies,10,81.77,817.7,2022-12-04
+348,1,"Laptop Pro 13""",Electronics,4,1325.68,5302.72,2022-07-03
+349,12,Smartphone X,Electronics,7,857.4,6001.8,2022-08-03
+350,2,Wireless Mouse,Electronics,5,35.13,175.65,2022-12-05
+351,2,Wireless Mouse,Electronics,3,23.3,69.9,2022-04-14
+352,4,"4K UHD Monitor 27""",Electronics,4,480.36,1921.44,2022-02-22
+353,9,Cloud Computing Textbook,Books,1,89.31,89.31,2022-10-23
+354,13,Tablet S,Electronics,5,727.82,3639.1,2022-10-29
+355,7,Standing Desk (Electric),Furniture,3,319.54,958.62,2022-05-02
+356,6,Office Chair Ergonomic,Furniture,3,390.07,1170.21,2022-05-22
+357,6,Office Chair Ergonomic,Furniture,10,196.5,1965.0,2022-01-09
+358,1,"Laptop Pro 13""",Electronics,2,1410.72,2821.44,2022-06-29
+359,1,"Laptop Pro 13""",Electronics,3,1109.53,3328.59,2022-11-20
+360,9,Cloud Computing Textbook,Books,7,85.15,596.05,2022-12-18
+361,13,Tablet S,Electronics,7,349.58,2447.06,2022-07-20
+362,3,Mechanical Keyboard,Electronics,4,88.58,354.32,2022-03-28
+363,13,Tablet S,Electronics,6,620.17,3721.02,2022-08-23
+364,11,Webcam HD 1080p,Electronics,2,40.31,80.62,2022-11-02
+365,6,Office Chair Ergonomic,Furniture,8,269.96,2159.68,2022-04-07
+366,15,A4 Printing Paper (Ream),Office Supplies,8,8.33,66.64,2022-10-30
+367,7,Standing Desk (Electric),Furniture,3,584.3,1752.9,2022-08-29
+368,1,"Laptop Pro 13""",Electronics,7,1278.09,8946.63,2022-07-30
+369,1,"Laptop Pro 13""",Electronics,1,1486.37,1486.37,2022-01-12
+370,3,Mechanical Keyboard,Electronics,1,73.09,73.09,2022-10-27
+371,2,Wireless Mouse,Electronics,1,38.36,38.36,2022-12-17
+372,2,Wireless Mouse,Electronics,7,33.89,237.23,2022-01-14
+373,6,Office Chair Ergonomic,Furniture,7,387.93,2715.51,2022-11-18
+374,5,USB-C Hub,Accessories,10,71.29,712.9,2022-04-27
+375,14,Printer All-in-One,Office Supplies,2,211.83,423.66,2022-10-13
+376,2,Wireless Mouse,Electronics,9,41.39,372.51,2022-11-14
+377,3,Mechanical Keyboard,Electronics,10,85.05,850.5,2022-08-08
+378,8,Python Programming Book,Books,1,31.56,31.56,2022-10-13
+379,10,Noise Cancelling Headphones,Electronics,4,261.25,1045.0,2022-01-24
+380,14,Printer All-in-One,Office Supplies,2,91.48,182.96,2022-09-22
+381,12,Smartphone X,Electronics,4,832.13,3328.52,2022-04-07
+382,5,USB-C Hub,Accessories,7,71.09,497.63,2022-07-07
+383,2,Wireless Mouse,Electronics,9,41.89,377.01,2022-10-07
+384,11,Webcam HD 1080p,Electronics,9,52.31,470.79,2022-08-01
+385,11,Webcam HD 1080p,Electronics,5,93.79,468.95,2022-07-05
+386,7,Standing Desk (Electric),Furniture,10,627.89,6278.9,2022-12-20
+387,8,Python Programming Book,Books,8,50.41,403.28,2022-08-30
+388,7,Standing Desk (Electric),Furniture,4,435.04,1740.16,2022-10-20
+389,12,Smartphone X,Electronics,2,690.1,1380.2,2022-04-06
+390,6,Office Chair Ergonomic,Furniture,7,361.06,2527.42,2022-09-24
+391,8,Python Programming Book,Books,10,29.1,291.0,2022-01-08
+392,5,USB-C Hub,Accessories,8,67.77,542.16,2022-02-21
+393,5,USB-C Hub,Accessories,1,30.04,30.04,2022-06-30
+394,1,"Laptop Pro 13""",Electronics,1,1430.04,1430.04,2022-08-04
+395,14,Printer All-in-One,Office Supplies,6,92.36,554.16,2022-11-30
+396,12,Smartphone X,Electronics,4,955.49,3821.96,2022-08-28
+397,6,Office Chair Ergonomic,Furniture,2,356.29,712.58,2022-09-05
+398,9,Cloud Computing Textbook,Books,1,40.18,40.18,2022-01-25
+399,7,Standing Desk (Electric),Furniture,5,494.44,2472.2,2022-05-23
+400,14,Printer All-in-One,Office Supplies,9,94.6,851.4,2022-09-24
+401,10,Noise Cancelling Headphones,Electronics,6,248.3,1489.8,2022-04-18
+402,2,Wireless Mouse,Electronics,4,20.03,80.12,2022-04-13
+403,14,Printer All-in-One,Office Supplies,1,161.62,161.62,2022-01-02
+404,12,Smartphone X,Electronics,1,1095.95,1095.95,2022-07-11
+405,15,A4 Printing Paper (Ream),Office Supplies,4,12.88,51.52,2022-07-31
+406,5,USB-C Hub,Accessories,9,44.45,400.05,2022-05-28
+407,6,Office Chair Ergonomic,Furniture,9,166.52,1498.68,2022-08-03
+408,13,Tablet S,Electronics,8,730.61,5844.88,2022-12-04
+409,13,Tablet S,Electronics,8,463.24,3705.92,2022-07-06
+410,6,Office Chair Ergonomic,Furniture,5,209.28,1046.4,2022-05-19
+411,5,USB-C Hub,Accessories,4,50.14,200.56,2022-03-02
+412,2,Wireless Mouse,Electronics,4,23.0,92.0,2022-02-01
+413,14,Printer All-in-One,Office Supplies,4,128.67,514.68,2022-09-02
+414,15,A4 Printing Paper (Ream),Office Supplies,7,6.26,43.82,2022-08-15
+415,10,Noise Cancelling Headphones,Electronics,4,117.2,468.8,2022-01-13
+416,14,Printer All-in-One,Office Supplies,2,225.82,451.64,2022-10-27
+417,14,Printer All-in-One,Office Supplies,5,225.01,1125.05,2022-10-02
+418,8,Python Programming Book,Books,7,69.87,489.09,2022-09-03
+419,15,A4 Printing Paper (Ream),Office Supplies,2,13.29,26.58,2022-04-20
+420,7,Standing Desk (Electric),Furniture,10,458.47,4584.7,2022-11-25
+421,5,USB-C Hub,Accessories,6,38.74,232.44,2022-11-03
+422,8,Python Programming Book,Books,6,66.2,397.2,2022-08-14
+423,14,Printer All-in-One,Office Supplies,7,186.0,1302.0,2022-05-12
+424,1,"Laptop Pro 13""",Electronics,9,1266.09,11394.81,2022-05-25
+425,5,USB-C Hub,Accessories,3,37.83,113.49,2022-04-02
+426,4,"4K UHD Monitor 27""",Electronics,7,375.66,2629.62,2022-07-15
+427,12,Smartphone X,Electronics,7,1090.23,7631.61,2022-01-16
+428,1,"Laptop Pro 13""",Electronics,9,1081.0,9729.0,2022-11-03
+429,10,Noise Cancelling Headphones,Electronics,7,269.26,1884.82,2022-12-20
+430,14,Printer All-in-One,Office Supplies,7,106.84,747.88,2022-09-07
+431,7,Standing Desk (Electric),Furniture,10,335.51,3355.1,2022-11-26
+432,14,Printer All-in-One,Office Supplies,9,150.7,1356.3,2022-12-14
+433,10,Noise Cancelling Headphones,Electronics,8,314.46,2515.68,2022-06-15
+434,5,USB-C Hub,Accessories,4,57.34,229.36,2022-06-06
+435,15,A4 Printing Paper (Ream),Office Supplies,8,5.82,46.56,2022-02-27
+436,4,"4K UHD Monitor 27""",Electronics,3,273.22,819.66,2022-05-06
+437,6,Office Chair Ergonomic,Furniture,7,377.96,2645.72,2022-09-22
+438,9,Cloud Computing Textbook,Books,7,68.85,481.95,2022-01-31
+439,7,Standing Desk (Electric),Furniture,8,470.23,3761.84,2022-05-09
+440,15,A4 Printing Paper (Ream),Office Supplies,7,7.67,53.69,2022-02-07
+441,5,USB-C Hub,Accessories,5,58.1,290.5,2022-09-24
+442,5,USB-C Hub,Accessories,7,35.97,251.79,2022-09-29
+443,2,Wireless Mouse,Electronics,9,37.54,337.86,2022-11-11
+444,13,Tablet S,Electronics,4,684.65,2738.6,2022-12-07
+445,7,Standing Desk (Electric),Furniture,2,470.24,940.48,2022-07-27
+446,11,Webcam HD 1080p,Electronics,5,50.24,251.2,2022-02-08
+447,14,Printer All-in-One,Office Supplies,1,206.09,206.09,2022-09-08
+448,6,Office Chair Ergonomic,Furniture,7,152.41,1066.87,2022-01-31
+449,14,Printer All-in-One,Office Supplies,7,122.93,860.51,2022-09-13
+450,4,"4K UHD Monitor 27""",Electronics,1,342.93,342.93,2022-06-26
+451,12,Smartphone X,Electronics,3,917.78,2753.34,2022-03-29
+452,10,Noise Cancelling Headphones,Electronics,1,221.66,221.66,2022-01-02
+453,1,"Laptop Pro 13""",Electronics,6,1473.52,8841.12,2022-12-10
+454,10,Noise Cancelling Headphones,Electronics,10,133.02,1330.2,2022-01-24
+455,11,Webcam HD 1080p,Electronics,10,78.39,783.9,2022-11-16
+456,3,Mechanical Keyboard,Electronics,10,179.05,1790.5,2022-01-24
+457,5,USB-C Hub,Accessories,5,57.48,287.4,2022-09-12
+458,12,Smartphone X,Electronics,1,834.04,834.04,2022-09-09
+459,10,Noise Cancelling Headphones,Electronics,2,233.67,467.34,2022-02-08
+460,8,Python Programming Book,Books,3,37.96,113.88,2022-06-07
+461,5,USB-C Hub,Accessories,8,55.91,447.28,2022-09-08
+462,13,Tablet S,Electronics,2,570.68,1141.36,2022-04-17
+463,8,Python Programming Book,Books,9,29.29,263.61,2022-05-30
+464,15,A4 Printing Paper (Ream),Office Supplies,8,6.4,51.2,2022-11-09
+465,11,Webcam HD 1080p,Electronics,5,64.63,323.15,2022-03-11
+466,15,A4 Printing Paper (Ream),Office Supplies,3,7.65,22.95,2022-08-22
+467,12,Smartphone X,Electronics,10,1127.72,11277.2,2022-10-31
+468,12,Smartphone X,Electronics,3,682.08,2046.24,2022-06-24
+469,3,Mechanical Keyboard,Electronics,10,185.49,1854.9,2022-11-29
+470,14,Printer All-in-One,Office Supplies,6,177.72,1066.32,2022-10-22
+471,12,Smartphone X,Electronics,3,1132.6,3397.8,2022-09-20
+472,15,A4 Printing Paper (Ream),Office Supplies,5,8.67,43.35,2022-12-24
+473,1,"Laptop Pro 13""",Electronics,7,1121.32,7849.24,2022-10-27
+474,8,Python Programming Book,Books,2,30.31,60.62,2022-09-13
+475,6,Office Chair Ergonomic,Furniture,9,213.55,1921.95,2022-11-19
+476,9,Cloud Computing Textbook,Books,5,88.56,442.8,2022-08-17
+477,14,Printer All-in-One,Office Supplies,9,163.67,1473.03,2022-02-14
+478,12,Smartphone X,Electronics,10,621.16,6211.6,2022-10-14
+479,12,Smartphone X,Electronics,3,1136.78,3410.34,2022-08-03
+480,15,A4 Printing Paper (Ream),Office Supplies,10,6.69,66.9,2022-02-03
+481,7,Standing Desk (Electric),Furniture,10,319.32,3193.2,2022-05-19
+482,14,Printer All-in-One,Office Supplies,6,101.44,608.64,2022-09-26
+483,11,Webcam HD 1080p,Electronics,9,68.66,617.94,2022-10-11
+484,4,"4K UHD Monitor 27""",Electronics,8,420.43,3363.44,2022-11-27
+485,11,Webcam HD 1080p,Electronics,7,42.02,294.14,2022-02-20
+486,9,Cloud Computing Textbook,Books,6,83.81,502.86,2022-05-30
+487,10,Noise Cancelling Headphones,Electronics,9,188.96,1700.64,2022-10-25
+488,7,Standing Desk (Electric),Furniture,4,564.48,2257.92,2022-12-08
+489,4,"4K UHD Monitor 27""",Electronics,10,415.77,4157.7,2022-09-13
+490,1,"Laptop Pro 13""",Electronics,7,1088.04,7616.28,2022-09-21
+491,2,Wireless Mouse,Electronics,1,35.37,35.37,2022-11-10
+492,12,Smartphone X,Electronics,6,824.57,4947.42,2022-03-17
+493,6,Office Chair Ergonomic,Furniture,7,207.19,1450.33,2022-08-04
+494,10,Noise Cancelling Headphones,Electronics,1,149.78,149.78,2022-03-13
+495,4,"4K UHD Monitor 27""",Electronics,6,279.71,1678.26,2022-12-21
+496,3,Mechanical Keyboard,Electronics,5,85.93,429.65,2022-09-10
+497,9,Cloud Computing Textbook,Books,6,70.48,422.88,2022-10-10
+498,11,Webcam HD 1080p,Electronics,6,114.64,687.84,2022-05-10
+499,3,Mechanical Keyboard,Electronics,10,168.37,1683.7,2022-05-19
+500,2,Wireless Mouse,Electronics,2,35.63,71.26,2022-07-26
