@@ -13,5 +13,10 @@ export default defineConfig({
         secure: false
       }
     }
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 5173,
+    allowedHosts: ['smart-erp-1.onrender.com']
   }
 })
