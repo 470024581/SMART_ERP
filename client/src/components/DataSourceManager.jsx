@@ -22,7 +22,7 @@ function DataSourceManager() {
   const [newDatasource, setNewDatasource] = useState({
     name: '',
     description: '',
-    type: 'knowledge_base'
+    type: 'sql_table_from_file'
   });
 
   const dismissAlert = () => setAlertMessage(null);
@@ -88,7 +88,7 @@ function DataSourceManager() {
       if (response.success) {
         await loadDatasources();
         setShowCreateModal(false);
-        setNewDatasource({ name: '', description: '', type: 'knowledge_base' });
+        setNewDatasource({ name: '', description: '', type: 'sql_table_from_file' });
         setAlertMessage({ type: 'success', message: response.message || t('dataSource.createSuccess', { name: newDatasource.name }) });
       } else {
         setAlertMessage({ type: 'danger', message: response.error || t('creatingDataSourceFailed') });
@@ -523,7 +523,7 @@ function DataSourceManager() {
                 onChange={(e) => setNewDatasource({ ...newDatasource, type: e.target.value })}
               >
                 <option value="sql_table_from_file">{t('formattedDataTableSQL')}</option>
-                <option value="knowledge_base">{t('knowledgeBaseDocsRAG')}</option>
+                {/* <option value="knowledge_base">{t('knowledgeBaseDocsRAG')}</option> */}
                 
               </Form.Select>
             </Form.Group>

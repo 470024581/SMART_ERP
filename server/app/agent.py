@@ -143,11 +143,11 @@ try:
     # cache_folder = Path(__file__).resolve().parent.parent / "data" / "st_cache"
     # cache_folder.mkdir(parents=True, exist_ok=True)
     # embeddings = SentenceTransformerEmbeddings(model_name=LOCAL_EMBEDDING_MODEL_NAME, cache_folder=str(cache_folder))
-    embeddings = SentenceTransformerEmbeddings(model_name=LOCAL_EMBEDDING_MODEL_NAME)
-    logger.info(f"Local embedding model {LOCAL_EMBEDDING_MODEL_NAME} initialized successfully.")
+    # embeddings = SentenceTransformerEmbeddings(model_name=LOCAL_EMBEDDING_MODEL_NAME) # This line should be commented
+    logger.info(f"Local embedding model {LOCAL_EMBEDDING_MODEL_NAME} initialization is commented out.")
 except Exception as e:
     logger.error(f"Local embedding model {LOCAL_EMBEDDING_MODEL_NAME} initialization failed: {e}", exc_info=True)
-    embeddings = None
+    embeddings = None # This ensures embeddings is None if the above is commented or fails
 
 async def perform_rag_query(query: str, datasource: Dict[str, Any]) -> Dict[str, Any]:
     """
