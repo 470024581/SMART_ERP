@@ -2,17 +2,17 @@
     "version": 2,
     "builds": [
       {
-        "src": "server/app/main.py",  // 从项目根目录到包含 FastAPI 实例的文件的路径
+        "src": "server/app/main.py",
         "use": "@vercel/python",
         "config": {
-          "runtime": "python3.9"  // 您可以根据需要选择 Python 版本，如 python3.11, python3.10 等
+          "runtime": "python3.11"
         }
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",              // 将所有传入的请求路由到您的 FastAPI 应用
-        "dest": "server/app/main.py" // 同样是项目根目录下的路径
+        "src": "/(.*)",
+        "dest": "server/app/main.py"
       }
     ]
   }
