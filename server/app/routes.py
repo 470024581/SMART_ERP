@@ -42,7 +42,7 @@ import json
 import sqlite3
 from fastapi.responses import FileResponse
 
-router = APIRouter(prefix="/api/v1", tags=["Smart ERP API"])
+router = APIRouter(tags=["Smart ERP API"])
 
 # File upload directory configuration
 UPLOAD_DIR = Path(__file__).resolve().parent.parent / "data" / "uploads"
@@ -54,7 +54,7 @@ SAMPLE_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # ==================== Sample Data API ======================
 
-@router.get("/sample-data-files", summary="List Sample Sales Data CSV Files")
+@router.get("/api/v1/sample-data-files", summary="List Sample Sales Data CSV Files")
 async def list_sample_data_files():
     """Lists available sample sales data CSV files."""
     try:
@@ -72,7 +72,7 @@ async def list_sample_data_files():
     except Exception as e:
         return {"success": False, "error": f"Failed to list sample data files: {str(e)}", "data": []}
 
-@router.get("/sample-data-files/{filename}", summary="Download Sample Sales Data CSV File")
+@router.get("/api/v1/sample-data-files/{filename}", summary="Download Sample Sales Data CSV File")
 async def download_sample_data_file(filename: str):
     """Downloads a specific sample sales data CSV file."""
     try:
@@ -93,7 +93,7 @@ async def download_sample_data_file(filename: str):
 
 # ==================== Data Source Management API ====================
 
-@router.get("/datasources", response_model=DataSourceListResponse, summary="Get Data Source List")
+@router.get("/api/v1/datasources", response_model=DataSourceListResponse, summary="Get Data Source List")
 async def get_datasources_list():
     """Get a list of all data sources"""
     try:
@@ -110,7 +110,7 @@ async def get_datasources_list():
             data=[]
         )
 
-@router.post("/datasources", response_model=DataSourceResponse, summary="Create Data Source")
+@router.post("/api/v1/datasources", response_model=DataSourceResponse, summary="Create Data Source")
 async def create_datasource_api(request: DataSourceCreate):
     """Create a new data source"""
     try:
@@ -144,7 +144,7 @@ async def create_datasource_api(request: DataSourceCreate):
             error=f"Failed to create data source: {str(e)}"
         )
 
-@router.get("/datasources/active", response_model=DataSourceResponse, summary="Get Active Data Source")
+@router.get("/api/v1/datasources/active", response_model=DataSourceResponse, summary="Get Active Data Source")
 async def get_active_datasource_api():
     """Get the currently active data source"""
     try:
@@ -213,7 +213,7 @@ async def get_active_datasource_api():
             data=None
         )
 
-@router.get("/datasources/{datasource_id}", response_model=DataSourceResponse, summary="Get Specific Data Source")
+@router.get("/api/v1/datasources/{datasource_id}", response_model=DataSourceResponse, summary="Get Specific Data Source")
 async def get_datasource_detail(datasource_id: int):
     """Get detailed information for a specific data source"""
     try:
@@ -234,7 +234,7 @@ async def get_datasource_detail(datasource_id: int):
             error=f"Failed to retrieve data source: {str(e)}"
         )
 
-@router.put("/datasources/{datasource_id}", response_model=DataSourceResponse, summary="Update Data Source")
+@router.put("/api/v1/datasources/{datasource_id}", response_model=DataSourceResponse, summary="Update Data Source")
 async def update_datasource_api(datasource_id: int, request: DataSourceUpdate):
     """Update data source information"""
     try:
@@ -264,7 +264,7 @@ async def update_datasource_api(datasource_id: int, request: DataSourceUpdate):
             error=f"Failed to update data source: {str(e)}"
         )
 
-@router.delete("/datasources/{datasource_id}", response_model=BaseResponse, summary="Delete Data Source")
+@router.delete("/api/v1/datasources/{datasource_id}", response_model=BaseResponse, summary="Delete Data Source")
 async def delete_datasource_api(datasource_id: int):
     """Delete a specific data source"""
     try:
@@ -287,7 +287,7 @@ async def delete_datasource_api(datasource_id: int):
             error=f"Failed to delete data source: {str(e)}"
         )
 
-@router.post("/datasources/{datasource_id}/activate", response_model=BaseResponse, summary="Activate Data Source")
+@router.post("/api/v1/datasources/{datasource_id}/activate", response_model=BaseResponse, summary="Activate Data Source")
 async def activate_datasource(datasource_id: int):
     """Set the specified data source as the currently active one"""
     try:
@@ -307,7 +307,7 @@ async def activate_datasource(datasource_id: int):
             error=f"Failed to activate data source: {str(e)}"
         )
 
-@router.put("/datasources/{datasource_id}/deactivate", response_model=BaseResponse, summary="Deactivate Data Source (sets Default as Active)")
+@router.put("/api/v1/datasources/{datasource_id}/deactivate", response_model=BaseResponse, summary="Deactivate Data Source (sets Default as Active)")
 async def deactivate_datasource_api(datasource_id: int):
     """Deactivate a specific data source and set the default ERP data source as active"""
     try:
@@ -332,7 +332,7 @@ async def deactivate_datasource_api(datasource_id: int):
 
 # ==================== File Management API ====================
 
-@router.post("/datasources/{datasource_id}/files/upload", summary="Upload File to Data Source")
+@router.post("/api/v1/datasources/{datasource_id}/files/upload", summary="Upload File to Data Source")
 async def upload_file(
     datasource_id: int,
     file: UploadFile = File(...),
@@ -410,7 +410,7 @@ async def upload_file(
                 print(f"Failed to remove partially uploaded file {file_path}: {e_remove}")
         return {"success": False, "error": f"File upload failed: {str(e)}"}
 
-@router.get("/datasources/{datasource_id}/files", response_model=FileListResponse, summary="Get Data Source File List")
+@router.get("/api/v1/datasources/{datasource_id}/files", response_model=FileListResponse, summary="Get Data Source File List")
 async def get_datasource_files(datasource_id: int):
     """Get all files for a specific data source"""
     try:
@@ -435,7 +435,7 @@ async def get_datasource_files(datasource_id: int):
             data=[]
         )
 
-@router.delete("/datasources/{datasource_id}/files/{file_id}", response_model=BaseResponse, summary="Delete File from Data Source")
+@router.delete("/api/v1/datasources/{datasource_id}/files/{file_id}", response_model=BaseResponse, summary="Delete File from Data Source")
 async def delete_file_from_datasource(datasource_id: int, file_id: int):
     """Delete a specific file and its associated data from a data source."""
     try:
@@ -451,7 +451,7 @@ async def delete_file_from_datasource(datasource_id: int, file_id: int):
 
 # ==================== Intelligent Q&A API ====================
 
-@router.post("/query", response_model=Dict[str, Any], summary="Intelligent Q&A")
+@router.post("/api/v1/query", response_model=Dict[str, Any], summary="Intelligent Q&A")
 async def query_endpoint(request: QueryRequest):
     """
     Generic intelligent Q&A interface - query ERP data using natural language.
@@ -506,7 +506,7 @@ async def query_endpoint(request: QueryRequest):
 
 # ==================== Inventory Management API ====================
 
-@router.get("/inventory", summary="Get Inventory List")
+@router.get("/api/v1/inventory", summary="Get Inventory List")
 async def get_inventory():
     """Get inventory information for all products"""
     try:
@@ -547,7 +547,7 @@ async def get_inventory():
     except Exception as e:
         return create_api_response(success=False, error=f"Failed to retrieve inventory data: {str(e)}")
 
-@router.get("/inventory/alerts", summary="Get Inventory Alerts")
+@router.get("/api/v1/inventory/alerts", summary="Get Inventory Alerts")
 async def get_inventory_alerts(threshold: int = Query(50, description="Inventory alert threshold")):
     """Get low stock alert information"""
     try:
@@ -580,7 +580,7 @@ async def get_inventory_alerts(threshold: int = Query(50, description="Inventory
 
 # ==================== Authentication API ====================
 
-@router.post("/auth/login", summary="User Login (Placeholder)")
+@router.post("/api/v1/auth/login", summary="User Login (Placeholder)")
 async def login(credentials: Dict[str, str]):
     """User login endpoint (placeholder)."""
     # In a real app, validate credentials, create a session/token
@@ -588,7 +588,7 @@ async def login(credentials: Dict[str, str]):
         return {"success": True, "message": "Login successful (placeholder)", "token": "fake-jwt-token"}
     raise HTTPException(status_code=401, detail="Invalid credentials (placeholder)")
 
-@router.post("/auth/logout", summary="User Logout (Placeholder)")
+@router.post("/api/v1/auth/logout", summary="User Logout (Placeholder)")
 async def logout():
     """User logout endpoint (placeholder)."""
     # In a real app, invalidate session/token
