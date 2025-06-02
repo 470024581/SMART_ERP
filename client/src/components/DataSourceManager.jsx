@@ -523,7 +523,7 @@ function DataSourceManager() {
                 onChange={(e) => setNewDatasource({ ...newDatasource, type: e.target.value })}
               >
                 <option value="sql_table_from_file">{t('formattedDataTableSQL')}</option>
-                {/* <option value="knowledge_base">{t('knowledgeBaseDocsRAG')}</option> */}
+                <option value="knowledge_base">{t('knowledgeBaseDocsRAG')}</option>
                 
               </Form.Select>
             </Form.Group>

@@ -4,7 +4,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.utilities import SQLDatabase
 from langchain_community.agent_toolkits import create_sql_agent
 from langchain_community.embeddings import SentenceTransformerEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
 from langchain.docstore.document import Document
@@ -143,11 +143,11 @@ try:
     # cache_folder = Path(__file__).resolve().parent.parent / "data" / "st_cache"
     # cache_folder.mkdir(parents=True, exist_ok=True)
     # embeddings = SentenceTransformerEmbeddings(model_name=LOCAL_EMBEDDING_MODEL_NAME, cache_folder=str(cache_folder))
-    # embeddings = SentenceTransformerEmbeddings(model_name=LOCAL_EMBEDDING_MODEL_NAME) # This line should be commented
-    logger.info(f"Local embedding model {LOCAL_EMBEDDING_MODEL_NAME} initialization is commented out.")
+    embeddings = SentenceTransformerEmbeddings(model_name=LOCAL_EMBEDDING_MODEL_NAME)
+    logger.info(f"Local embedding model {LOCAL_EMBEDDING_MODEL_NAME} initialized successfully.")
 except Exception as e:
     logger.error(f"Local embedding model {LOCAL_EMBEDDING_MODEL_NAME} initialization failed: {e}", exc_info=True)
-    embeddings = None # This ensures embeddings is None if the above is commented or fails
+    embeddings = None
 
 async def perform_rag_query(query: str, datasource: Dict[str, Any]) -> Dict[str, Any]:
     """

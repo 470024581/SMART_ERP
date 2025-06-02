@@ -5,6 +5,7 @@ load_dotenv() # Load .env file at the very beginning
 """
 SmartERP 后端服务启动脚本
 支持开发和生产环境的启动配置
+现已集成 LangServe 功能
 """
 
 import sys
@@ -53,8 +54,8 @@ def check_python():
 
 def check_dependencies():
     """Check if required packages are installed."""
-    # Updated list of core dependencies. sqlite3 is part of stdlib.
-    required_packages = ['fastapi', 'uvicorn', 'pydantic', 'langchain', 'langchain_openai'] 
+    # Updated list of core dependencies including LangServe
+    required_packages = ['fastapi', 'uvicorn', 'pydantic', 'langchain', 'langchain_openai', 'langserve'] 
     missing_packages = []
     
     for package in required_packages:
@@ -73,12 +74,12 @@ def check_dependencies():
             print(f"❌ requirements.txt not found at {requirements_file}. Please create it or install manually.")
             return False
     else:
-        print("✓ All required packages are installed")
+        print("✓ All required packages are installed (including LangServe)")
         return True
 
 def main():
     """主启动函数"""
-    parser = argparse.ArgumentParser(description="SmartERP 后端服务")
+    parser = argparse.ArgumentParser(description="SmartERP 后端服务 (LangServe集成)")
     parser.add_argument("--host", default=config.HOST, help="服务器地址")
     parser.add_argument("--port", type=int, default=config.PORT, help="服务器端口")
     parser.add_argument("--reload", action="store_true", default=config.RELOAD, help="启用热重载")
@@ -98,9 +99,10 @@ def main():
     if args.no_reload:
         args.reload = False
     
-    print("🚀 启动 SmartERP 后端服务...")
+    print("🚀 启动 SmartERP 后端服务 (LangServe 集成)...")
     print(f"📍 服务地址: http://{args.host}:{args.port}")
     print(f"📖 API文档: http://{args.host}:{args.port}/docs")
+    print(f"🔗 LangServe路由: http://{args.host}:{args.port}/langserve/*/docs")
     
     # 检查环境配置
     check_environment()
@@ -118,6 +120,7 @@ def main():
         print("⚠️  服务可能无法正常工作")
     
     print(f"\n🌟 启动模式: {'开发' if args.reload else '生产'}")
+    print("🔧 集成功能: LangServe + FastAPI")
     print("按 Ctrl+C 停止服务\n")
     
     # 启动服务器

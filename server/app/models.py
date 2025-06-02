@@ -21,9 +21,11 @@ class DataSourceType(str, Enum):
 class FileType(str, Enum):
     PDF = "pdf"
     TXT = "txt"
+    TEXT = "txt"  # Alias for TXT
     DOCX = "docx"
     CSV = "csv"
     XLSX = "xlsx"
+    UNKNOWN = "unknown"
 
 class ProcessingStatus(str, Enum):
     PENDING = "pending"

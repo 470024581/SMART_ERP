@@ -23,5 +23,4 @@ pandas
 # For local embeddings
 sentence-transformers
 torch
-transformers # Often a dependency, good to have explicitly
-# tiktoken # No longer needed if not using OpenAI embeddings 
+transformers 

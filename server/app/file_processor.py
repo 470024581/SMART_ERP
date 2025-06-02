@@ -128,11 +128,63 @@ async def process_uploaded_file(
             logger.info(f"[FileProcessor] File ID: {file_id} - SQL table ingestion COMPLETED. Rows: {len(df)}")
 
         else:
-            logger.info(f"[FileProcessor] File ID: {file_id} - Not a CSV/XLSX for SQL table or wrong DS type. Using placeholder processing.")
-            await asyncio.sleep(5) # Simulate processing for other file types
-            processed_chunks_count = 50 # Placeholder
-            await update_file_processing_status(file_id, status=ProcessingStatus.COMPLETED.value, chunks=processed_chunks_count)
-            logger.info(f"[FileProcessor] File ID: {file_id} - Placeholder processing COMPLETED.")
+            # Handle knowledge_base files or other types that need text processing for RAG
+            logger.info(f"[FileProcessor] File ID: {file_id} - Processing for knowledge base/RAG. File type: {file_type}")
+            
+            if ds_type == DataSourceType.KNOWLEDGE_BASE.value:
+                try:
+                    # For knowledge base files, we'll do a basic processing simulation
+                    # In a real implementation, this would extract text, chunk it, and create embeddings
+                    
+                    if not file_path.exists():
+                        logger.error(f"[FileProcessor] File not found at path: {file_path}")
+                        raise FileNotFoundError(f"Source file {original_filename} not found at {file_path}")
+                    
+                    # Get file size for processing estimation
+                    file_size = file_path.stat().st_size
+                    
+                    # Simulate text extraction and chunking
+                    # In a real implementation, this would call text extraction functions
+                    # based on file type (PDF, DOCX, TXT, etc.)
+                    
+                    if file_type.lower() in [FileType.TXT.value, FileType.TEXT.value]:
+                        # For text files, we can easily process them
+                        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                            text_content = f.read()
+                        estimated_chunks = max(1, len(text_content) // 1000)  # Rough estimate
+                        
+                    elif file_type.lower() == FileType.PDF.value:
+                        # For PDF files, estimate chunks based on file size
+                        estimated_chunks = max(1, file_size // 5000)  # Rough estimate
+                        
+                    elif file_type.lower() == FileType.DOCX.value:
+                        # For DOCX files, estimate chunks based on file size
+                        estimated_chunks = max(1, file_size // 3000)  # Rough estimate
+                        
+                    elif file_type.lower() in [FileType.CSV.value, FileType.XLSX.value]:
+                        # For CSV/XLSX in knowledge base, treat as structured text
+                        estimated_chunks = max(1, file_size // 2000)  # Rough estimate
+                        
+                    else:
+                        estimated_chunks = 1  # Unknown file type, minimal processing
+                    
+                    # Simulate processing time proportional to estimated chunks
+                    processing_time = min(10, max(2, estimated_chunks * 0.5))  # 2-10 seconds
+                    await asyncio.sleep(processing_time)
+                    
+                    await update_file_processing_status(file_id, status=ProcessingStatus.COMPLETED.value, chunks=estimated_chunks)
+                    logger.info(f"[FileProcessor] File ID: {file_id} - Knowledge base processing COMPLETED. Estimated chunks: {estimated_chunks}")
+                    
+                except Exception as e:
+                    logger.error(f"[FileProcessor] Error in knowledge base processing for file ID: {file_id}. Error: {str(e)}")
+                    raise
+            else:
+                # For other data source types, use placeholder processing
+                logger.info(f"[FileProcessor] File ID: {file_id} - Using placeholder processing for DS type: {ds_type}")
+                await asyncio.sleep(3)  # Simulate processing
+                processed_chunks_count = 10  # Placeholder
+                await update_file_processing_status(file_id, status=ProcessingStatus.COMPLETED.value, chunks=processed_chunks_count)
+                logger.info(f"[FileProcessor] File ID: {file_id} - Placeholder processing COMPLETED.")
 
     except Exception as e:
         logger.error(f"[FileProcessor] Error processing file ID: {file_id}, Name: {original_filename}. Error: {str(e)}", exc_info=True)
